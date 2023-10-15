@@ -4,7 +4,8 @@ const president = [{name: 'Washington', years:[1789,1790,1791,1792,1793,1794,179
 president.forEach((president) => 
 {
     console.log(president.name)
-    console.log(president.years)
-    
 })
+president.forEach(president => president.years.forEach(year => console.log(year)));
 
+const fiveyear = president.filter(president => president.years.length > 5);
+console.log(fiveyear);
